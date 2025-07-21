@@ -8,6 +8,7 @@ const buildContext: BuildContext = await context({
   outdir: "dist",
   platform: "node",
   target: "node14",
+  external: ["fp-ts", "fp-ts-std"],
 });
 
 await buildContext.watch();
