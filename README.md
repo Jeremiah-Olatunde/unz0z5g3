@@ -1,3 +1,3 @@
-# Vite x Node
+# Esbuild x Node
 
-using vite in node applications
+using esbuild in node applications

@@ -1,9 +1,9 @@
 {
   "name": "unz0z5g3",
   "version": "0.0.0",
-  "description": "using vite in node applications",
+  "description": "using esbuild in node applications",
   "keywords": [
-    "vite",
+    "esbuild",
     "node"
   ],
   "license": "ISC",
