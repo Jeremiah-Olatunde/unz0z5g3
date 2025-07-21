@@ -1,6 +1,6 @@
-import * as esbuild from "esbuild";
+import { context, type BuildContext } from "esbuild";
 
-const context = await esbuild.context({
+const buildContext: BuildContext = await context({
   bundle: true,
   entryPoints: ["src/index.ts"],
   format: "cjs",
@@ -10,4 +10,4 @@ const context = await esbuild.context({
   target: "node14",
 });
 
-await context.watch();
+await buildContext.watch();
