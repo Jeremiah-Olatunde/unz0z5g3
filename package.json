@@ -1,0 +1,16 @@
+{
+  "name": "unz0z5g3",
+  "version": "0.0.0",
+  "description": "using vite in node applications",
+  "keywords": [
+    "vite",
+    "node"
+  ],
+  "license": "ISC",
+  "author": "Jesuseun Jeremiah Olatunde",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
