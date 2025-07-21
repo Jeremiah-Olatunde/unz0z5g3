@@ -1,6 +1,7 @@
-import * as Function from "fp-ts/function";
-import * as IOEither from "fp-ts/IOEither";
-import * as Random from "fp-ts/Random";
+import * as Function from "../lib/fp-ts/Function.js";
+import * as IO from "../lib/fp-ts/IO.js";
+import * as IOEither from "../lib/fp-ts/IOEither.js";
+import * as Random from "../lib/fp-ts/Random.js";
 
 const SYMBOL_NAME: unique symbol = Symbol("name");
 
@@ -45,5 +46,8 @@ function getNameLast(): IOEither.IOEither<"ErrorNameLast", string> {
     IOEither.apSW("first", first),
     IOEither.apSW("last", last),
     IOEither.map(name),
+    IO.execute,
   );
+
+  console.log(result);
 }
