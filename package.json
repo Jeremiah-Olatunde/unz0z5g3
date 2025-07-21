@@ -12,12 +12,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx esbuild src/index.ts --bundle --external:fp-ts --external:fp-ts-std --platform=node --target=node14 --outdir=dist --watch --allow-overwrite"
+    "build": "npx esbuild src/index.ts --bundle --external:fp-ts --external:fp-ts-std --platform=node --target=node14 --outdir=dist --watch --allow-overwrite",
+    "dev": "npx concurrently --raw \"tsc --watch --noEmit\" \"tsup\""
   },
   "devDependencies": {
     "@tsconfig/node24": "^24.0.1",
     "@tsconfig/strictest": "^2.0.5",
     "@types/node": "^24.0.15",
+    "concurrently": "^9.2.0",
     "esbuild": "^0.25.8",
     "tsup": "^8.5.0",
     "typescript": "^5.8.3"

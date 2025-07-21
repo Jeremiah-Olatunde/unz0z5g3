@@ -3,7 +3,9 @@
     "@tsconfig/node24/tsconfig.json",
     "@tsconfig/strictest/tsconfig.json"
   ],
+  "exclude": ["dist"],
   "compilerOptions": {
+    "preserveWatchOutput": true,
     "paths": {
       "@lib/*": ["./lib/*"]
     }
