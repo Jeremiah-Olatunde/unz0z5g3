@@ -1,2 +1,1 @@
-export * from "fp-ts/function";
-export * from "fp-ts-std/Function";
+export { pipe } from "fp-ts/function";
